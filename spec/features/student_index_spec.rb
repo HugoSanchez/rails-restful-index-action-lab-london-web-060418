@@ -14,7 +14,7 @@ describe 'Multiple students are shown' do
     Student.create!(first_name: "Lindsey", last_name: "Stirling")
 
     visit "/students"
-
+    byebug
     expect(page).to have_content(/(?=.*Daenerys)(?=.*Lindsey).*/)
   end
 end
